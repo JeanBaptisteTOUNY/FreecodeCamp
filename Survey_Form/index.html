@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+       <title>Formulaire Inscription</title>
+       <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1 id="title" class="text-center">Formulaire d'Inscription</h1>
+                <p id="description" class="description text-center">Voici un formulaire d'inscription à remplir</p>
+            </header>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Ton Nom:</label>
+                    <input type="text" id="name" class="form-control" placeholder="Entrez votre nom" required>
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Ton email:</label>
+                    <input type="email" id="email" class="form-control" placeholder="Votre email" required>
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Votre Age:</label>
+                    <input type="number" id="number" class="form-control" placeholder="Votre Age" min="0" max="120" required>
+                </div>
+                <div class="form-group">
+                    <label for="dropdown">Homme ou Femme</label>
+                    <select id="dropdown" class="form-control">
+                        <option value="homme">Homme</option>
+                        <option value="femme">Femme</option>
+                        <option value="non-binaire">Non-Binaire</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>À quel rythme utilisez-vous votre ordinateur?</p>
+                    <label><input type="radio" name="usage" value="daily" class="input-radio"> Daily</label>
+                    <label><input type="radio" name="usage" value="weekly" class="input-radio"> Weekly</label>
+                    <label><input type="radio" name="usage" value="monthly" class="input-radio"> Monthly</label>
+                </div>
+                <div class="form-group">
+                    <p>Quel univers préférez-vous?</p>
+                    <label><input type="checkbox" value="warhammer" class="input-checkbox"> Warhammer</label>
+                    <label><input type="checkbox" value="star-wars" class="input-checkbox"> Star Wars</label>
+                    <label><input type="checkbox" value="Marvel" class="input-checkbox"> Marvel</label>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Commentaires :</label>
+                    <textarea id="comments" class="input-textarea" placeholder="Entrez votre commentaire"></textarea>
+                </div>
+                <div class="form-group">
+                    <button id="submit" type="submit" class="submit-button">Soumettre</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
